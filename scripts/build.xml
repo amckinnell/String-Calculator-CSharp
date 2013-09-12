@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="release" default="zip" basedir=".">
 
-	<property name="filename.zip" value="String-Calculator-Sharp.zip" />
+	<property name="filename.zip" value="String-Calculator-CSharp.zip" />
 
 	<target name="clean">
 		<delete file="${filename.zip}" />
