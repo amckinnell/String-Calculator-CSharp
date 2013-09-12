@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="release" default="zip" basedir=".">
+
+	<property name="filename.zip" value="String-Calculator-Sharp.zip" />
+
+	<target name="clean">
+		<delete file="${filename.zip}" />
+	</target>
+
+	<target name="zip">
+		<zip destfile="${filename.zip}" basedir="..">
+    		<include name="**/*.cs" />
+    		<include name="**/*.csproj" />
+    		<include name="*.sln" />
+    		<include name="*.testsettings" />
+		</zip>
+	</target>
+
+</project>
